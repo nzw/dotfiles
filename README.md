@@ -7,7 +7,7 @@ Development environment configuration file
 > ruby install.rb
 ```
 
-## .gitconfig
+## Files that need to be edited.file: `.gitconfig`
 ```
 [user]
 	name  = { Your acount name }
@@ -21,4 +21,4 @@ Development environment configuration file
 
 ## git clone Vim Plugin.
 # Installation plugin list
-- [Installation plugin list](https://github.com/nzw/dotfiles/blob/master/plugin_list.txt)
+- [Installation plugin list](https://github.com/nzw/dotfiles/blob/master/install_list.txt)
