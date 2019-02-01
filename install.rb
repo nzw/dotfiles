@@ -11,7 +11,7 @@ when /^[yY]/
 		Open3.capture3("rm -rf #{dir}")
 		Open3.capture3("mkdir -p #{dir}")
 	end
-	File.open("plugin_list.txt") do |f|
+	File.open("install_list.txt") do |f|
 		f.each_line do |line|
 			Open3.capture3("cd #{dir}; git clone #{line}")
 			print "clone #{line} ...\n"
