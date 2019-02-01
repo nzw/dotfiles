@@ -7,6 +7,7 @@ case response
 when /^[yY]/
 	dir = "./.vim/bundle/"
 	if File.exists?(dir)
+	else
 		print "create [#{dir}] directory\n"
 		Open3.capture3("rm -rf #{dir}")
 		Open3.capture3("mkdir -p #{dir}")
