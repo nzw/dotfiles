@@ -13,8 +13,8 @@ Development environment configuration file
 	name  = { Your acount name }
 	email = { Your e-mail }
 ```
+
 ## php-cs-fixer
-```
 
 .vim/bundle/vim-php-cs-fixer/autoload/php_cs_fixer.vim
 ```
