@@ -26,3 +26,4 @@ https://github.com/tyru/caw.vim.git
 https://github.com/leafgarland/typescript-vim.git
 https://github.com/mtscout6/syntastic-local-eslint.vim.git
 https://github.com/aklt/plantuml-syntax.git
+https://github.com/stephpy/vim-php-cs-fixer.git

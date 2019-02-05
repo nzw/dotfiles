@@ -111,6 +111,7 @@ NeoBundle 'vim-ruby'
 NeoBundle 'vim-rails'
 NeoBundle 'vim-slim'
 NeoBundle "aklt/plantuml-syntax"
+NeoBundle "vim-php-cs-fixer"
 NeoBundleLazy 'yajs.vim', {'autoload':{'filetypes':['javascript']}}
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 call neobundle#end()
@@ -320,5 +321,18 @@ inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y>  neocomplcache#close_popup()
 inoremap <expr><C-e>  neocomplcache#cancel_popup()
+
+" php-cs-fixer
+let g:php_cs_fixer_path  = "/usr/local/bin/php-cs-fixer" "インストールした場所を指定
+let g:php_cs_fixer_level = "all"                " which level ?
+let g:php_cs_fixer_config = "default"           " configuration
+let g:php_cs_fixer_php_path = "php"             " Path to PHP
+let g:php_cs_fixer_fixers_list = ""             " List of fixers
+let g:php_cs_fixer_enable_default_mapping = 1   " Enable the mapping by default (<leader>pcd)
+let g:php_cs_fixer_dry_run = 1                  " Call command with dry-run option
+let g:php_cs_fixer_verbose = 1                  " Return the output of command if 1, else an inline information.
+
+nnoremap <silent>,pcd :call PhpCsFixerFixDirectory()<CR>
+nnoremap <silent>,pcf :call PhpCsFixerFixFile()<CR>
 
 filetype plugin indent on

@@ -13,6 +13,20 @@ Development environment configuration file
 	name  = { Your acount name }
 	email = { Your e-mail }
 ```
+## php-cs-fixer
+```
+
+.vim/bundle/vim-php-cs-fixer/autoload/php_cs_fixer.vim
+```
+let command = command.' --dry-run'
+　↓
+let command = command.' --dry-run --diff'
+```
+
+.bashrc
+```
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+```
 
 ## Vim Setting
 ```
