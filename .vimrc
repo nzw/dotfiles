@@ -112,6 +112,7 @@ NeoBundle 'vim-rails'
 NeoBundle 'vim-slim'
 NeoBundle "aklt/plantuml-syntax"
 NeoBundle "vim-php-cs-fixer"
+NeoBundle "vim-instant-markdown"
 NeoBundleLazy 'yajs.vim', {'autoload':{'filetypes':['javascript']}}
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 call neobundle#end()
