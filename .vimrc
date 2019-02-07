@@ -8,15 +8,15 @@ filetype plugin indent off
 " Indent
 "----------------------------------------
 "インデント時のスペース数
+"タブをスペース展開
+set expandtab
+" タブをタブとして扱う（スペースに展開しない）
+"set noexpandtab
 " タブを表示するときの幅
 set tabstop=4
 " タブを挿入するときの幅
 set shiftwidth=4
 set softtabstop=0
-"タブをスペース展開
-"set expandtab
-" タブをタブとして扱う（スペースに展開しない）
-set noexpandtab
 " タブが押された場合にtabstopでなく、shiftwidthの数だけインデントする
 "set smarttab
 "自動インデント
