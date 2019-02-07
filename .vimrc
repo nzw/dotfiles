@@ -125,6 +125,9 @@ set splitbelow
 autocmd BufRead,BufNewFile *.ts set filetype=typescript
 autocmd BufRead,BufNewFile *.tsx set filetype=typescript
 
+"Vue
+autocmd BufRead,BufNewFile *.vue set filetype=javascript
+
 "Slim Template Engine
 autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
 
