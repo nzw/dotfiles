@@ -5,6 +5,7 @@
 	ui = auto
 [core]
 	editor = /usr/bin/vim
+	excludesfile = 
 [alias]
 	co = checkout
 	st = status
