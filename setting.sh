@@ -5,7 +5,7 @@
 SKIP="o"$1
 DIR=$(cd $(dirname $0); pwd)
 echo $DIR
-for var in ".bashrc" ".vimrc" ".vim" ".tmux.conf" ".gitconfig"
+for var in ".bashrc" ".zshrc"  ".vimrc" ".vim" ".tmux.conf" ".gitconfig"
 do
 	FILE_NAME=${DIR}/${var}
 	if [ ${SKIP} = "o--ms" ]; then

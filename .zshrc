@@ -1,5 +1,5 @@
-PS1="\u@\h:\W "
-export PS1
+# PS1="\u@\h:\W "
+# export PS1
 alias ls='ls -G';
 alias ll='ls -la';
 alias diff2="diff -wBT --old-line-format='<-- %L' --new-line-format='--> %L' --unchanged-line-format='    %L'";
@@ -9,7 +9,7 @@ export LSCOLORS=DxGxcxdxCxegedabagaca
 export HISTSIZE=10000
 
 # Ctrl+fでパス文字列を/ごとに削除
-bind '\C-f:unix-filename-rubout'
+#bind '\C-f:unix-filename-rubout'
 
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
@@ -19,7 +19,6 @@ alias pcdr='eval $(history | cut -c 8- | grep '^cd' | uniq | peco)'
 
 export PERL_CPANM_OPT="--local-lib=~/extlib"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-export PATH=$PATH:/Users/nzw/.nodebrew/current/bin
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
 
 # tmuxでbash_historyの同期
@@ -29,7 +28,7 @@ export HISTSIZE=500000
 # 重複コマンドは追記しない、追記済みを消去
 export HISTCONTROL=ignoredups:erasedups
 # .bash_history追記モードは不要なのでOFFに
-shopt -u histappend
+# shopt -u histappend
 unset PROMPT_COMMAND
 
 # コマンド履歴にコマンドを使ったの時刻を記録する
