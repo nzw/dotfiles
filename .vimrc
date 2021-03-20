@@ -13,9 +13,9 @@ set expandtab
 " タブをタブとして扱う（スペースに展開しない）
 "set noexpandtab
 " タブを表示するときの幅
-set tabstop=4
+set tabstop=2
 " タブを挿入するときの幅
-set shiftwidth=4
+set shiftwidth=2
 set softtabstop=0
 " タブが押された場合にtabstopでなく、shiftwidthの数だけインデントする
 "set smarttab
@@ -204,7 +204,9 @@ if has('vim_starting') &&  file_name == ''
 endif
 
 " カラースキーム
-colorscheme jellybeans
+set background=dark
+"colorscheme jellybeans
+colorscheme hybrid
 
 """"""""""""""""""""
 " unite.vim

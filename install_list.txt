@@ -28,3 +28,4 @@ https://github.com/mtscout6/syntastic-local-eslint.vim.git
 https://github.com/aklt/plantuml-syntax.git
 https://github.com/stephpy/vim-php-cs-fixer.git
 https://github.com/suan/vim-instant-markdown.git
+https://github.com/w0ng/vim-hybrid.git
