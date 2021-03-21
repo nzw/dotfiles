@@ -207,6 +207,7 @@ endif
 set background=dark
 "colorscheme jellybeans
 colorscheme hybrid
+"colorscheme molokai
 
 """"""""""""""""""""
 " unite.vim

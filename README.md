@@ -1,7 +1,7 @@
-# dotfiles
+# dotfiles:
 Development environment configuration file
 
-## Setting
+## Setting:
 ```
 $ sh ./setting.sh
 $ ruby install.rb
@@ -17,7 +17,7 @@ $ ruby install.rb
 	excludesfile = /Users/{ Your name }/.gitignore
 ```
 
-## php-cs-fixer
+## php-cs-fixer:
 ```
 $ brew install php-cs-fixer
 ```
@@ -34,7 +34,27 @@ let command = command.' --dry-run --diff'
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 ```
 
+## Vim colorscheme:
+
+### jellybeans:
+```
+$ mv ~/.vim/bundle/molokai/colors/molokai.vim ~/.vim/colors/
+```
+### hybrid:
+```
+$ mv ~/.vim/bundle/vim-hybrid/colors/hybrid.vim ~/.vim/colors/
+```
+
 ## Vim Setting
+### Add code:
+You want to use that comment out.
+```
+"colorscheme jellybeans
+colorscheme hybrid
+"colorscheme molokai
+```
+
+### Command execution on vim:
 ```
 :NeoBundleInstall
 ```
