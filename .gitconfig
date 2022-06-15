@@ -1,11 +1,11 @@
 [user]
-	name = 
-	email = 
+	name = {{ Your username }}
+	email = {{ Your e-mail }}
 [color]
 	ui = auto
 [core]
 	editor = /usr/bin/vim
-	excludesfile = 
+	excludesfile = /{{ Your path name }}/.gitignore
 [alias]
 	co = checkout
 	st = status

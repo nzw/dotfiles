@@ -12,7 +12,7 @@ do
 		ln -s ${FILE_NAME} ~/${var}
 	elif [ -e ~/${var} ] || [ -d ~/${var} ]; then
 		# 入力確認
-		echo "「~/${var}」が存在します。上書きしますか？ (y/n): "
+		echo "「~/${var}」は存在します。上書きしますか？ (y/n): "
 		read yn
 		if [ ${yn} = "Y" ] || [ ${yn} = "y" ]; then
 			rm -rf ~/${var}
