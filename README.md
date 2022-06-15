@@ -10,26 +10,38 @@ $ source .bashrc
 $ source .zshrc
 ```
 
-## Files that need to be edited.file: `.gitconfig`
+Files that need to be edited.
+- file: `.gitconfig`
 ```
 [user]
-	name  = {{ Your name }}
-	email = {{ Your e-mail }}
+	name  = {{ Your name }}     // default name
+	email = {{ Your e-mail }}   // default e-mail
 [core]
 	editor = /usr/bin/vim
 	excludesfile = /{{ Your path name }}/.gitignore
 ```
 
 ## When separating multiple GIT accounts for each directory.
-```
-$ cp .gitconfig ~/.gitconfig_develop    // Copy file name is free
-$ vim .gitconfig_develop                // Edit the file
-```
 
 Add the directory name of target to `{{ }}` :
+
+- file: `.gitconfig`
 ```
 [includeIf "gitdir:/{{ Your directory name }}/"]
     path = ~/.gitconfig_develop
+```
+
+Run it:
+```
+$ cp .gitconfig ~/.gitconfig_develop    // Copy file name is free
+```
+
+Write it down:
+- file: `.gitconfig_develop`
+```
+[user]
+	name  = {{ Your name }}     // Set a name different
+	email = {{ Your e-mail }}   // Set a e-mail different
 ```
 
 ## php-cs-fixer:
@@ -39,7 +51,7 @@ $ brew install php-cs-fixer
 ```
 
 Add to the file:
-.vim/bundle/vim-php-cs-fixer/autoload/php_cs_fixer.vim
+`.vim/bundle/vim-php-cs-fixer/autoload/php_cs_fixer.vim`
 ```
 let command = command.' --dry-run'
 　↓
@@ -61,10 +73,8 @@ $ mv ~/.vim/bundle/vim-hybrid/colors/hybrid.vim ~/.vim/colors/
 
 ## Vim Setting
 
-### Add the file:
-`.vimrc`
+Add the file: `.vimrc`
 
-### Add code:
 You want to use that comment out.
 ```
 "colorscheme jellybeans
@@ -72,7 +82,7 @@ colorscheme hybrid
 "colorscheme molokai
 ```
 
-### Command execution on vim:
+Run it in Vim:
 ```
 :NeoBundleInstall
 ```
@@ -80,3 +90,4 @@ colorscheme hybrid
 ## git clone Vim Plugin.
 # Installation plugin list
 - [Installation plugin list](https://github.com/nzw/dotfiles/blob/master/install_list.txt)
+
